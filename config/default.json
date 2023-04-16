@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://jake123:jake123@devconnector.ht8drqr.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}
