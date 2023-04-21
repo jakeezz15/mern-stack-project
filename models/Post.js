@@ -7,6 +7,10 @@ const PostSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user',
   },
+  text: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
   },
@@ -24,7 +28,7 @@ const PostSchema = mongoose.Schema({
   comments: [
     {
       user: {
-        type: Scheme.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'user',
       },
       text: {
