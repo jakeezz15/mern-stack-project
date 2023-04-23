@@ -91,7 +91,7 @@ router.delete('/:id', auth, async (req, res) => {
 
     // await post.remove();
 
-    await Post.findOneAndRemove({ _id: post });
+    await Post.findOneAndDelete({ _id: post._id });
 
     res.json({ msg: 'Post removed!' });
   } catch (err) {
